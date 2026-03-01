@@ -1,17 +1,88 @@
-# React + Vite
+# Apple MacBook Pro Landing Page (WIP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Apple-style MacBook Pro landing page built with React, Vite, GSAP animations, and interactive 3D models using React Three Fiber.
 
-Currently, two official plugins are available:
+## Status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is currently **in progress** and not finished yet.
 
-## React Compiler
+Implemented so far:
+- Navigation bar and hero section
+- Interactive product viewer with:
+  - Color switching
+  - 14" / 16" model switching
+  - 3D model rendering with lights
+- Scroll-based showcase animation section
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Still in progress:
+- Responsive and accessibility polish
+- Content refinement and section completeness
+- Final animation tuning and cleanup
+- Production-level optimization
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Macbook-Pro-Landing-Page---HTML---CSS---Gsap---React---Javascript-Project
+- React 19
+- Vite 7
+- GSAP + ScrollTrigger
+- React Three Fiber + Drei + Three.js
+- Zustand
+- Tailwind CSS 4
+
+## Project Structure
+
+```txt
+src/
+  components/
+    NavBar.jsx
+    Hero.jsx
+    ProductViewer.jsx
+    Showcase.jsx
+    three/
+    models/
+  store/
+  constants/
+```
+
+## Getting Started
+
+### 1) Install dependencies
+
+```bash
+npm install
+```
+
+### 2) Run development server
+
+```bash
+npm run dev
+```
+
+### 3) Build for production
+
+```bash
+npm run build
+```
+
+### 4) Preview production build
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+- `npm run dev` - start Vite dev server
+- `npm run build` - create production build
+- `npm run preview` - preview production build
+- `npm run lint` - run ESLint
+
+## Notes
+
+- 3D assets are located in `public/models`
+- Video assets are located in `public/videos`
+- Some UI text and layout details may change during development
+
+## License
+
+This project is for learning and portfolio purposes.
